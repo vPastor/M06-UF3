@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+        <script src="js/ejercicios.js"></script>
+<head>
+    <title>examentohuapo</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        label {
+            display: block;
+            margin: 5px;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+        <script>
+                function load() {
+                  alert("Ha cargado la pagina");
+                }
+                window.onload = load;
+                </script>
+    <h1>TIENDA TO RESHULONA</h1>
+    <form name="formularioPrincipal" method="get" id="form1">
+        <label>Plaques Base:<br><input type="radio" name="Plaques" value="PlacaA">Placa Base A - 50€<br>
+            <input type="radio" name="Plaques" value="PlacaB">Placa Base B - 100€<br>
+            <input type="radio" name="Plaques" value="PlacaC">Placa Base C - 150€<br>
+        </label>
+        <label>Processadors:<br><input type="radio" name="Processadors" value="Processadors3">Processador i3 - 50€<br>
+            <input type="radio" name="Processadors" value="Processadors5">Processador i5 -100€<br>
+            <input type="radio" name="Processadors" value="Processadors7">Processador i7 - 150€<br>
+            <input type="radio" name="Processadors" value="Processadors9">Processador i9 - 200€ (només es pot muntar amb la
+            “Placa Base C”).<br>
+        </label>
+        <label>Memòries RAM: <br><input type="radio" name="Memories" value="Memories8">8 GB - 50€<br>
+            <input type="radio" name="Memories" value="Memories16">16 GB - 100€<br>
+            <input type="radio" name="Memories" value="Memories24">24 GB - 150€<br>
+            <input type="radio" name="Memories" value="Memories32">32 GB - 200€<br>
+        </label>
+        <label>Fonts d'alimentació:<br><input type="radio" name="Fonts" value="Fonts500">Font Alimentació 500W - 50€<br>
+            <input type="radio" name="Fonts" value="Fonts750">Font Alimentació 750W - 100€<br>
+            <input type="radio" name="Fonts" value="Fonts1000">Font Alimentació 1000W - 150€<br>
+        </label>
+        <label>Discs:<br><input type="radio" name="Discs" value="Discs128">SSD 128 GB - 50€<br>
+            <input type="radio" name="Discs" value="Discs256">SSD 256 GB - 100€<br>
+            <input type="radio" name="Discs" value="Discs512">SSD 512 GB - 150€<br>
+            <input type="radio" name="Discs" value="Discs1">SSD 1 TB - 200€ (només es pot muntar amb la “Placa Base C” i la “Font Alimentació 1000W”).<br>
+        </label>
+        <label><input type="radio" id="cbox1" name="acasa" value="cal">cal enviar l’ordinador<br>
+
+            <input type="radio" name="acasa" id="cbox2" value="el">el passarà a recollir per la botiga</label>
+        <button type="button" onclick="sumbit1()">Submit</button>
+
+    </form>
+    <div id="MensajeAviso"></div>
+    <div style="display: none;" id="form2">
+    <form name="formularioContacto" method="get" action="accion1.html" >
+
+        <h2>Formulario de contacto</h2>
+
+        <label>Nom i cognoms:<input id="nombreFormContacto" type="text" name="nombre" maxlength="50" size="60" /></label>
+
+        <label>Telefono:<input id="Telefono" type="tel" name="telefono" maxlength="9" size="10" /></label>
+
+        <label><h4>Adress:</h4>
+        <label>Carrer<input id="Carrer" type="text" name="Carrer" maxlength="50" size="60"/>
+        </label>
+        <label>Número del carrer<input id="NumCarr" type="number" name="NumCarr" maxlength="4" size="20" />
+        </label>
+        <label>Codi Postal<input id="Codi" type="number" name="Codi" maxlength="5" size="20" />
+        </label>
+        <label>Ciutat<input id="apellidosFormContacto" type="text" name="dni" maxlength="9" size="10" /></label>
+
+        <label>SEXO:<br><input type="radio" name="sexo" checked="checked" value="hombre">HOMBRE<br>
+            <input type="radio" name="sexo" value="mujer">MUJER<br>
+            <input type="radio" name="sexo" value="otros">OTROS<br>
+        </label>
+
+
+        <label>FOTO:
+            <input type="file" name="pic" accept="image/*">
+        </label>
+
+        <label>ENVIAR PUBLICIDAD:<input type="checkbox" name="vehicle" value="Car" checked><br></label>
+
+        <label><input id="botonEnvio1" type="submit" value="Enviar"></label>
+        </label>
+    </form>
+</div>
+    <form name="formularioReclamacion" method="get" action="accion2.html" style="display: none;">
+
+        <h2>Formulario de reclamación</h2>
+
+        <label>Motivo reclamación:<input id="motivoFormReclama" type="text" name="motivo" /></label>
+
+        <label>Fecha del hecho:<input id="fechaFormReclama" type="text" name="fecha" /></label>
+
+        <label><input id="botonEnvio2" type="submit" value="Enviar"></label>
+
+    </form>
+
+</body>
+
+</html>
