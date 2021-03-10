@@ -81,8 +81,21 @@
     </select><br>
     <h1>Dades de contacte
     </h1><br>
-
+    <label>Mail: <input type="text" id="mail" name="mail" maxlength="30" size="40"/></label><br>
+    <label>Telf: <input type="text" id="telf" name="telf" maxlength="9" minlength="9" size="10"/></label><br>
+    <label>Vius a Barcelona:<br>
+      <input type="radio" id="s"
+       name="viu" value="s">
+      <label for="s">Si</label><br>
+   
+      <input type="radio" id="n"
+       name="viu" value="n">
+      <label for="n">No</label><br>
+   </label>
+    <h1>Clau d'accés i nota legal
+    </h1><br>
     
+    <button onclick="validate">submit</button>
 </form>
 </body>
 <script src="./javascript.js"></script>
