@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="rellenar()">
     <form>
     <h1>Questionari de registre </h1>
     
@@ -14,6 +14,7 @@
     <label>Primer Cognom: <input type="text" id="pcognom"  maxlength="60" size="80"/></label><br>
     <label>Segon Cognom: <input type="text" id="scognom"  maxlength="60" size="80"/></label><br>
     <label>Document:<br>
+      <div id="inputdocument">
     <input type="radio" id="dni"
     name="contact" value="dni" checked>
    <label for="dni">DNI</label><br>
@@ -22,7 +23,9 @@
     name="contact" value="nie">
    <label for="nie">NIE</label><br>
     </label>
-   <input id="info" type="text"><br>
+
+  </div>
+  <input id="info" type="text"><br>
 <label>ETS:<br>
    <input type="radio" id="home"
     name="sexe" value="home">
@@ -94,7 +97,10 @@
    </label>
     <h1>Clau d'accés i nota legal
     </h1><br>
-    
+    <label>Clau d'acces: <input type="text" id="contra" name="contra" /></label><br>
+    <label>Confirmar clau d'acces: <input type="text" id="repcontra"/></label><br>
+    <label><input type="checkbox" id="legal" value="first_checkbox"> Aceptas los terminos legales y vender tu alma al diablo</label><br>
+
     <button onclick="validate">submit</button>
 </form>
 </body>
