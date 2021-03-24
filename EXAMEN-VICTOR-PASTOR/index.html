@@ -17,12 +17,6 @@
 </head>
 
 <body>
-        <script>
-                function load() {
-                  alert("Ha cargado la pagina");
-                }
-                window.onload = load;
-                </script>
     <h1>TIENDA TO RESHULONA</h1>
     <form name="formularioPrincipal" method="get" id="form1">
         <label>Plaques Base:<br><input type="radio" name="Plaques" value="PlacaA">Placa Base A - 50€<br>
@@ -63,7 +57,7 @@
 
         <label>Nom i cognoms:<input id="nombreFormContacto" type="text" name="nombre" maxlength="50" size="60" /></label>
 
-        <label>Telefono:<input id="Telefono" type="tel" name="telefono" maxlength="9" size="10" /></label>
+        <label>Telefono:<input id="Telefono" type="number" name="telefono" maxlength="9" size="10" /></label>
 
         <label><h4>Adress:</h4>
         <label>Carrer<input id="Carrer" type="text" name="Carrer" maxlength="50" size="60"/>
@@ -72,7 +66,7 @@
         </label>
         <label>Codi Postal<input id="Codi" type="number" name="Codi" maxlength="5" size="20" />
         </label>
-        <label>Ciutat<input id="apellidosFormContacto" type="text" name="dni" maxlength="9" size="10" /></label>
+        <label>Ciutat<input id="ciutat" type="text" name="dni" maxlength="9" size="10" /></label>
 
         <label>SEXO:<br><input type="radio" name="sexo" checked="checked" value="hombre">HOMBRE<br>
             <input type="radio" name="sexo" value="mujer">MUJER<br>
@@ -86,8 +80,9 @@
 
         <label>ENVIAR PUBLICIDAD:<input type="checkbox" name="vehicle" value="Car" checked><br></label>
 
-        <label><input id="botonEnvio1" type="submit" value="Enviar"></label>
+        <button type="button" onclick="submit2()">Submit</button>
         </label>
+        <div id="aviso"></div>
     </form>
 </div>
     <form name="formularioReclamacion" method="get" action="accion2.html" style="display: none;">
