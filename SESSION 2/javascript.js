@@ -14,4 +14,6 @@ function rellenar(){
     pasaporte.setAttribute("id","pasaporte");
     pasaporte.setAttribute("name","contact");
     div.appendChild(pasaporte);
+    var llistat = document.createElement("input").innerHTML="<datalist id='ensenyaments'>    <option value='Educació secundària obligatòria'><option value='Programes de formació i inserció'>    <option value='Formació professional'>    <option value=Batxillerat>    <option value='Ensenyaments artístics superiors'>    <option value=Batxillerat>    <option value='Ensenyaments esportius'>  </datalist><br>";
+    document.getElementById("nivelldestudis").append(llistat);
 }
